@@ -15,7 +15,7 @@ const Header = () => {
                 NEW:
               </span>
               <span className="ml-1.5 mr-1 inline-block">
-                AI feature integrated! ✨
+                AI insights integrated! ✨
               </span>
             </a>
           </div>
