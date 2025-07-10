@@ -18,6 +18,12 @@ app.get("/", (req, res) => res.send("API is working"));
 app.use("/api/admin", adminRouter);
 app.use("/api/blog", blogRouter);
 
+// Azure Setup Files
+app.use(express.static("../client/dist"));
+app.get("*", (req, res) => {
+  res.sendFile(path.resolve(__dirname, "client", "dist", "index.html"));
+});
+
 const PORT = process.env.PORT || 3000;
 
 app.listen(PORT, () => {
