@@ -1,4 +1,3 @@
-import React from "react";
 import { useAppContext } from "../../../context/AppContext";
 import toast from "react-hot-toast";
 
@@ -22,7 +21,7 @@ const BlogTableItem = ({ blog, fetchBlogs, index }) => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error(data.message);
+      toast.error(error.message);
     }
   };
 
@@ -38,7 +37,7 @@ const BlogTableItem = ({ blog, fetchBlogs, index }) => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error(data.message);
+      toast.error(error.message);
     }
   };
   return (

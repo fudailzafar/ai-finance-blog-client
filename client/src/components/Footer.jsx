@@ -1,4 +1,3 @@
-import React from "react";
 import Logo from "../assets/favicon.ico";
 import { footer_data } from "../assets/assets";
 

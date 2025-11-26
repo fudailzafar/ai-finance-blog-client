@@ -19,7 +19,7 @@ const AddBlog = () => {
   const [category, setCategory] = useState("Startup");
   const [isPublished, setIsPublished] = useState(false);
 
-  const generateContent = async (e) => {
+  const generateContent = async () => {
     if (!title) return toast.error("Please enter a title");
     try {
       setLoading(true);
@@ -67,7 +67,7 @@ const AddBlog = () => {
         toast.error(data.message);
       }
     } catch (error) {
-      toast.error(data.message);
+      toast.error(error.message);
     } finally {
       setIsAdding(false);
     }

@@ -1,6 +1,4 @@
-import React from "react";
 import Logo from "../assets/favicon.ico";
-import { useNavigate } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
 import { useAppContext } from "../../context/AppContext";
 
